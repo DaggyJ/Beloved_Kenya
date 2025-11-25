@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Beloved Church Kenya</title>
   <meta name="description" content="Beloved Church Kenya — Where Love, Holiness & Power Meet" />
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   
@@ -14,7 +14,9 @@
 
 <script>
   // Load the navbar dynamically
-  fetch('navbar.html')
+  fetch('navbar.html') 
+
+
     .then(res => res.text())
     .then(html => {
       document.getElementById('navbar-placeholder').innerHTML = html;
@@ -22,7 +24,7 @@
       // Dynamically load navbar CSS
       const link = document.createElement('link');
       link.rel = 'stylesheet';
-      link.href = '../assets/css/navbar.css';  // go up 1 level from templates/
+      link.href = 'assets/css/navbar.css';  // go up 1 level from templates/
       document.head.appendChild(link);
     })
     .catch(err => console.error('Failed to load navbar:', err));
@@ -50,49 +52,37 @@
     </p>
   </div>
   <figure class="hero-media">
-    <img src="../assets/media/Bsh. Onduru.jpg" alt="Bishop Sam Onduru" />
+    <img src="assets/media/Bsh. Onduru.jpg" alt="Bishop Sam Onduru" />
   </figure>
 </section>
 
-
-    <!-- Pastor's message>
-    <section class="section container pastor">
-      <h2>Bishop's Message</h2>
-      <div class="pastor-grid">
-        <img src="../assets/media/bishop.jpg" alt="Bishop Sam Onduru" class="pastor-photo">
-        <div class="pastor-text">
-          <p>Beloved, the Lord is calling His church to intimacy and holiness. This is a generation to arise in prayer and power. You are welcome to be part of this divine family where God still moves.</p>
-          <p class="signature">— Bishop Sam Onduru</p>
-        </div>
-      </div>
-    </section-->
 
     <!-- Gallery -->
     <section class="section container gallery" id="gallery">
       <h2>Church Gallery</h2>
       <p class="muted">Moments of worship, outreach and community life.</p>
       <div class="gallery-grid">
-        <img src="../assets/media/structure.jpg" alt="Worship" class="gallery-item">
-        <img src="../assets/media/youths.jpg" alt="Youth Meeting" class="gallery-item">
-        <img src="../assets/media/children.jpg" alt="Children Ministry" class="gallery-item">
-        <img src="../assets/media/praise.jpg" alt="Choir" class="gallery-item">
-        <img src="../assets/media/ministering.jpg" alt="Bishop Ministering" class="gallery-item">
-        <img src="../assets/media/worship.jpg" alt="Outreach" class="gallery-item">
-        <img src="../assets/media/churc.jpg" alt="Worship" class="gallery-item">
-        <img src="../assets/media/ngam.jpg" alt="Youth Meeting" class="gallery-item">
-        <img src="../assets/media/food.jpg" alt="Children Ministry" class="gallery-item">
-        <img src="../assets/media/bish.jpg" alt="Choir" class="gallery-item">
-        <img src="../assets/media/chi.fa.jpg" alt="Bishop Ministering" class="gallery-item">
-        <img src="../assets/media/gen.jpg" alt="Outreach" class="gallery-item">
-        <img src="../assets/media/narok.jpg" alt="Worship" class="gallery-item">
-        <img src="../assets/media/service.jpg" alt="Youth Meeting" class="gallery-item">
-        <img src="../assets/media/mass.jpg" alt="Children Ministry" class="gallery-item">
-        <img src="../assets/media/crus.jpg" alt="Choir" class="gallery-item">
-        <img src="../assets/media/migo.jpg" alt="Bishop Ministering" class="gallery-item">
-        <img src="../assets/media/crusaide.jpg" alt="Outreach" class="gallery-item">
-        <img src="../assets/media/eldo.jpg" alt="Worship" class="gallery-item">
-        <img src="../assets/media/sif.jpg" alt="Youth Meeting" class="gallery-item">
-        <img src="../assets/media/kuria.jpg" alt="Youth Meeting" class="gallery-item">
+        <img src="assets/media/structure.jpg" alt="Worship" class="gallery-item">
+        <img src="assets/media/youths.jpg" alt="Youth Meeting" class="gallery-item">
+        <img src="assets/media/children.jpg" alt="Children Ministry" class="gallery-item">
+        <img src="assets/media/praise.jpg" alt="Choir" class="gallery-item">
+        <img src="assets/media/ministering.jpg" alt="Bishop Ministering" class="gallery-item">
+        <img src="assets/media/worship.jpg" alt="Outreach" class="gallery-item">
+        <img src="assets/media/churc.jpg" alt="Worship" class="gallery-item">
+        <img src="assets/media/ngam.jpg" alt="Youth Meeting" class="gallery-item">
+        <img src="assets/media/food.jpg" alt="Children Ministry" class="gallery-item">
+        <img src="assets/media/bish.jpg" alt="Choir" class="gallery-item">
+        <img src="assets/media/chi.fa.jpg" alt="Bishop Ministering" class="gallery-item">
+        <img src="assets/media/gen.jpg" alt="Outreach" class="gallery-item">
+        <img src="assets/media/narok.jpg" alt="Worship" class="gallery-item">
+        <img src="assets/media/service.jpg" alt="Youth Meeting" class="gallery-item">
+        <img src="assets/media/mass.jpg" alt="Children Ministry" class="gallery-item">
+        <img src="assets/media/crus.jpg" alt="Choir" class="gallery-item">
+        <img src="assets/media/migo.jpg" alt="Bishop Ministering" class="gallery-item">
+        <img src="assets/media/crusaide.jpg" alt="Outreach" class="gallery-item">
+        <img src="assets/media/eldo.jpg" alt="Worship" class="gallery-item">
+        <img src="assets/media/sif.jpg" alt="Youth Meeting" class="gallery-item">
+        <img src="assets/media/kuria.jpg" alt="Youth Meeting" class="gallery-item">
         
       </div>
 
@@ -182,6 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <script>
 fetch('footer.html')
+
   .then(res => res.text())
   .then(html => {
     document.getElementById('footer-placeholder').innerHTML = html;
@@ -189,7 +180,7 @@ fetch('footer.html')
     // Dynamically add footer CSS
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '../assets/css/footer.css'; // path to your footer CSS
+    link.href = 'assets/css/footer.css'; // path to your footer CSS
     document.head.appendChild(link);
 
     // Optional: add current year
@@ -205,7 +196,7 @@ fetch('footer.html')
   .catch(err => console.error('Failed to load footer:', err));
 </script>
 
-  <script src="../assets/js/scripts.js" defer></script>
+  <script src="assets/js/scripts.js" defer></script>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
