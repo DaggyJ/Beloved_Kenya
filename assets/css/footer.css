@@ -1,9 +1,6 @@
 /* ===== Footer ===== */
 .site-footer {
-  /* Remove solid color */
-  /* background-color: #4a39e9; */
-
-  /* Add background image */
+    /* Add background image */
   background: url('../media/footer.jpg') center/cover no-repeat;
 
   color: #ccc;                  

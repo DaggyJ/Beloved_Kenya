@@ -1,8 +1,6 @@
 /* Navbar Base */
 .site-header {
-  /* Remove the solid color */
-  /* background-color: #ff8fd4; */
-
+  
   /* Add background image */
   background: url('../media/nav2.jpg') center/cover no-repeat;
 
