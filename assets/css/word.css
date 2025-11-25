@@ -21,7 +21,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 300px; /* ensures banner shows */
+  min-height: 150px; /* ensures banner shows */
   display: flex;
   align-items: center;
   justify-content: center;

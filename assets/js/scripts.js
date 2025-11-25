@@ -87,3 +87,37 @@ document.addEventListener('DOMContentLoaded', () => {
   fnMove('p1');
 });
 
+
+/* Gallery Hover */
+document.addEventListener("DOMContentLoaded", () => {
+
+    const images = document.querySelectorAll('.gallery-item');
+
+    images.forEach(img => {
+
+        img.addEventListener('mouseenter', () => {
+            const label = document.createElement('div');
+            label.className = 'hover-label';
+            label.textContent = img.alt;
+            document.body.appendChild(label);
+
+            const rect = img.getBoundingClientRect();
+            label.style.top = rect.top + window.scrollY + rect.height/2 - label.offsetHeight/2 + 'px';
+            label.style.left = rect.left + window.scrollX + rect.width/2 - label.offsetWidth/2 + 'px';
+
+            // slight delay to allow DOM insert
+            setTimeout(() => label.style.opacity = 1, 10);
+
+            img._hoverLabel = label;
+        });
+
+        img.addEventListener('mouseleave', () => {
+            if(img._hoverLabel){
+                img._hoverLabel.remove();
+                img._hoverLabel = null;
+            }
+        });
+
+    });
+
+});

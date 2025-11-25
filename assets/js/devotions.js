@@ -40,7 +40,7 @@ const devotions = [
     notes: [
       "Waiting is active trust, not idle time.",
       "Renewal comes through reliance on God.",
-      "Eagles soar because they prepare and wait; we renew spiritually when we wait on the Lord."
+      "Eagles soar because they prepare and wait; we are renewed spiritually when we wait on the Lord."
     ]
   },
 

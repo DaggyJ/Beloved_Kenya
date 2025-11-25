@@ -89,10 +89,21 @@
   transform: translateX(-40%);
  }
 
+.ul{
+  color: rgb(117, 81, 12);
+}
+
+.ul:hover {
+  transform: scale(1.05);
+  color: #27041b;
+}
+
+
+
 /* Parent card positioning */
 .vision-card.onduru {
   position: absolute;
-  top: 80px;
+  top: 90px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 250px;
@@ -219,21 +230,34 @@
 }
 
 
-.bishop-card.chimba {
-  top: 75px;
-  left: 0;      /* start far left */
-  object-position: center -30%; /* reveal face */
-  position: relative;
-  transform: translateX(20%);
+/* Fix Chimba image positioning */
+.bishop-card.chimba img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center 10%; /* adjust up/down */
+  border-radius: 50%;
+  border: 3px solid #d27fa9;
 }
 
+/* Fix Elijah card layout */
 .bishop-card.elijah {
   top: 20px;
-  left: 50%;    /* center */
-  object-position: center 08%; /* reveal face */
+  left: 50%;
   position: relative;
   transform: translateX(-60%);
 }
+
+/* Fix Elijah image face reveal */
+.bishop-card.elijah img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center 2%; /* adjust up/down */
+  border-radius: 50%;
+  border: 3px solid #d27fa9;
+}
+
 
 .bishop-card.oyalla {
   top: -45px;
@@ -251,10 +275,14 @@
 }
 
 .bishop-card.eshitera {
+   width: 40%;
+  height: 40%;
   top: 20px;
   left: 50%;    /* center */
   position: relative;
   transform: translateX(-60%);
+  object-position: center 20%; /* adjust up/down */
+
 }
 
 

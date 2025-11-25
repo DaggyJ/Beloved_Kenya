@@ -1,22 +1,46 @@
 /* ===== Footer ===== */
 .site-footer {
-  background-color: #4a39e9;  
+  /* Remove solid color */
+  /* background-color: #4a39e9; */
+
+  /* Add background image */
+  background: url('../media/footer.jpg') center/cover no-repeat;
+
   color: #ccc;                  
   padding: 0.75rem 1rem;           /* reduced from 3rem to 2rem */
   font-family: 'Arial', sans-serif;
   text-align: left;
+  position: relative;              /* for overlay if needed */
 }
 
+/* Optional overlay for readability */
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);  /* adjust darkness as needed */
+  z-index: 0;
+}
+
+/* Ensure footer content stays above overlay */
+.site-footer * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer container remains the same */
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1275px;
   margin: 0 auto;
-  gap: 1.5rem;                 /* slightly reduced gap */
+  gap: 1.5rem;
 }
 
-
+/* Footer left and right content styles remain unchanged */
 .footer-left strong {
   display: block;
   font-size: 1.2rem;
@@ -24,22 +48,25 @@
   margin-bottom: 0.5rem;
 }
 
-/* Reduce spacing below the logo */
 .logo-container {
-  margin-bottom: 0.2rem;  /* previously 0.5rem */
+  margin-bottom: 0.2rem;
+  width: 225px;
+  height: 120px;
+  background: url("../media/kenya.jpg") center/cover no-repeat;
+  margin: 0 auto 0.5rem auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Push address and small text closer to logo */
 .footer-left address,
 .footer-left small {
   font-style: normal;
   font-size: 0.95rem;
   color: #ccc;
   line-height: 1.5;
-  margin-top: 0;           /* remove any extra top margin */
-  padding-top: 0;          /* remove extra padding */
+  margin-top: 0;
+  padding-top: 0;
 }
-
 
 .footer-right {
   text-align: right;
@@ -68,7 +95,7 @@
 }
 
 .sns li a:hover {
-  color: #2e2c2d;  /* accent hover color */
+  color: #2e2c2d;
 }
 
 /* Mobile responsiveness */
@@ -87,39 +114,3 @@
     margin-top: 1rem;
   }
 }
-
-
-/* ===== Logo Container with Background ===== */
-.logo-container {
-  position: relative;
-  width: 200px;                
-  height: 75px;                
-  background-image: url('https://www.belovedc.com/img/en/about/headerimg_03.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;       /* stack logo + text vertically */
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;          
-  margin-bottom: 0.5rem;       
-}
-
-.logo-container .logo-small {
-  width: 25px;                 
-  height: auto;
-  margin-bottom: 3px;
-  transform: translateY(4px);  /* moves logo down */
-}
-
-
-.logo-container .logo-text {
-  font-size: 15px;             
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-align: center;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-}
-
