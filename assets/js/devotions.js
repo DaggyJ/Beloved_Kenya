@@ -3,7 +3,7 @@
 const devotions = [
   {
     title: "God is Our Refuge",  // custom title for today
-    date: "2025-11-14",
+    date: "2025-11-25",
     scripture: "Psalm 46",
     reflection: "God is our refuge and strength. He is ever-present in times of trouble.",
     notes: [
@@ -15,14 +15,14 @@ const devotions = [
 
   {
     title: "Those Who Wait on the Lord",
-    date: "2025-11-15",
+    date: "2025-11-26",
     scripture: "Isaiah 40:31",
     reflection: "Those who wait on the Lord shall renew their strength and soar like eagles."
   },
 
   {
     title: "God is Our Refuge",  // custom title for today
-    date: "2025-11-16",
+    date: "2025-11-27",
     scripture: "Psalm 46",
     reflection: "God is our refuge and strength. He is ever-present in times of trouble.",
     notes: [
@@ -34,7 +34,7 @@ const devotions = [
   
   {
     title: "Those Who Wait on the Lord",
-    date: "2025-11-17",
+    date: "2025-11-28",
     scripture: "Isaiah 40:31",
     reflection: "Those who wait on the Lord shall renew their strength and soar like eagles.",
     notes: [
@@ -46,13 +46,13 @@ const devotions = [
 
   {
     title: "Trust and Guidance",
-    date: "2025-11-18",
+    date: "2025-11-29",
     scripture: "Proverbs 3:5-6",
     reflection: "Trust in the Lord with all your heart, and He will direct your paths."
   },
   {
     title: "The Lord is My Shepherd",
-    date: "2025-11-19",
+    date: "2025-11-30",
     scripture: "Psalm 23",
     reflection: "The Lord is my shepherd; I shall not want."
   }
