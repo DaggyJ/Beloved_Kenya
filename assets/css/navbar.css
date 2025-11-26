@@ -1,12 +1,10 @@
 /* Navbar Base */
 .site-header {
-  
   /* Add background image */
   background: url('../media/nav2.jpg') center/cover no-repeat;
 
-  padding: 10px 0;
-  max-width: 1500px; 
-  height: 180px;
+  /* Use padding instead of a fixed height so header can scale */
+  padding: 12px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative; /* for overlay */
   color: white;       /* ensures text is visible */
@@ -34,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   position: relative;
 }
@@ -54,12 +52,11 @@
 }
 
 .nav-logo img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 3px;
-   margin-top: 35px; /* moves links lower */
 }
 
 .nav-title {
@@ -77,7 +74,6 @@
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
-   margin-top: 35px; /* moves links lower */
 }
 
 .nav-link:hover {
@@ -99,12 +95,16 @@
   .nav {
     flex-direction: column;
     align-items: center;
-    padding-top: 10px; /* extra spacing for toggle */
+    padding-top: 8px; /* extra spacing for toggle */
   }
 
   .nav-toggle {
     display: block; /* show toggle on mobile */
     margin-bottom: 10px; /* space below toggle */
+    align-self: flex-end;
+    background: transparent;
+    border-radius: 4px;
+    padding: 6px 10px;
   }
 
   .nav-left, .nav-right {

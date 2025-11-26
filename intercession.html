@@ -30,6 +30,12 @@
       link.rel = 'stylesheet';
       link.href = 'assets/css/navbar.css';  // go up 1 level from templates/
       document.head.appendChild(link);
+
+      const navToggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.nav');
+      if (navToggle && nav) {
+        navToggle.addEventListener('click', () => nav.classList.toggle('show'));
+      }
     })
     .catch(err => console.error('Failed to load navbar:', err));
 </script>

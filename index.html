@@ -26,6 +26,14 @@
       link.rel = 'stylesheet';
       link.href = 'assets/css/navbar.css';  // go up 1 level from templates/
       document.head.appendChild(link);
+      // Attach mobile toggle handler now that navbar is in the DOM
+      const navToggle = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.nav');
+      if (navToggle && nav) {
+        navToggle.addEventListener('click', () => {
+          nav.classList.toggle('show');
+        });
+      }
     })
     .catch(err => console.error('Failed to load navbar:', err));
 </script>
