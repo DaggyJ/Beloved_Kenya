@@ -95,20 +95,17 @@
   position: absolute;
   top: 15px;
   right: 20px;
-  z-index: 9999;
+  z-index: 999999;
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
-  .nav {
-    flex-wrap: wrap;
-  }
-
   .nav-left, .nav-right {
     display: none;
     flex-direction: column;
     width: 100%;
     text-align: center;
-    background-color: rgba(255,182,193,0.9); /* optional for mobile menu readability */
+    margin-top: 50px; /* push down to not cover toggle */
   }
 
   .nav.show .nav-left,
@@ -117,10 +114,16 @@
   }
 
   .nav-toggle {
-    display: block;
+    display: block; /* show toggle only on small screens */
   }
 
   .nav-logo {
     margin: 10px auto;
   }
 }
+
+/* Make sure all nav elements have pointer cursor */
+.nav-left, .nav-right, .nav-toggle {
+  cursor: pointer;
+}
+
