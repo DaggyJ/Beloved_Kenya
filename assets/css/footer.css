@@ -1,3 +1,4 @@
+
 /* ===== Footer ===== */
 .site-footer {
     /* Add background image */
@@ -9,6 +10,7 @@
   text-align: left;
   position: relative;              /* for overlay if needed */
 }
+
 
 /* Optional overlay for readability */
 .site-footer::before {
@@ -45,16 +47,17 @@
   margin-bottom: 0.5rem;
 }
 
-/* Updated logo path */
+
 .logo-container {
     margin-bottom: 0.2rem;
     width: 225px;
     height: 120px;
-    background: #ccc url("media/Kenya.jpg") center/cover no-repeat; /* updated path */
+    background: #ccc url("../media/Kenya.jpg") center/cover no-repeat;
     margin: 0 auto 0.5rem auto;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 .footer-left address,
 .footer-left small {
